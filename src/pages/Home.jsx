@@ -56,7 +56,7 @@ export const Home = () => {
   return (
     <div className="min-h-screen bg-black text-white p-4 sm:p-8">
       <div className="flex items-center justify-between gap-4 mb-6 flex-wrap">
-        <Link to="/" className="text-white hover:text-indigo-500 transition">
+        <Link to="/TODOAPP" className="text-white hover:text-indigo-500 transition">
           <FaHome className="text-3xl sm:text-4xl" />
         </Link>
         <h1 className="text-3xl sm:text-4xl font-extrabold text-gray-100 text-center flex-grow">PRODUCTIIBE</h1>
