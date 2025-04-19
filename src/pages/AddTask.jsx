@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom'; // Ensure you're importing useNavigate correctly
 import { useTasks } from '../services/taskDataContext';
-import { postPosts } from '../services/PostApi';
 import { FaHome } from 'react-icons/fa';
 
 export const AddTask = () => {
@@ -37,7 +36,7 @@ export const AddTask = () => {
 
       // Wait a little to ensure the task is added before redirecting
       setTimeout(() => {
-        navigate('/'); // Redirect to homepage after successful task addition
+        navigate('/TODOAPP'); // Redirect to homepage after successful task addition
       }, 300); // Adjust timeout duration if necessary
     } catch (error) {
       console.error("Error adding task:", error);
@@ -50,7 +49,7 @@ export const AddTask = () => {
     <div className="min-h-screen bg-black text-white p-4 sm:p-8">
       {/* Header with Home Button */}
       <div className="flex items-center justify-center gap-3 mb-6 flex-wrap">
-        <Link to="/" className="text-white hover:text-indigo-500 transition">
+        <Link to="/TODOAPP" className="text-white hover:text-indigo-500 transition">
           <FaHome className="text-3xl sm:text-4xl" />
         </Link>
         <h1 className="text-4xl sm:text-5xl font-extrabold text-gray-100 text-center">PRODUCTIIBE</h1>
