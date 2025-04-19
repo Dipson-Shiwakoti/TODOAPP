@@ -13,7 +13,7 @@ export const Navbar = ({ handleFilterChange, searchQuery, setSearchQuery, tasks 
     <nav className="w-full flex flex-col sm:flex-row items-center justify-between bg-black text-white p-4 rounded-xl shadow-md space-y-4 sm:space-y-0 sm:space-x-6">
       <div className="flex gap-4">
         <Link
-          to="/"
+          to="/TODOAPP"
           className="text-lg font-semibold text-indigo-600 hover:text-indigo-800 transition duration-300"
         >
           Home
